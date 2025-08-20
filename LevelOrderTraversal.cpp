@@ -19,7 +19,7 @@ public:
 vector<vector<int>> level_order(Node* root){
     vector<vector<int>> ans;
     queue<Node*> q;
-    q.push(root);
+    if(root) q.push(root);
     while(!q.empty()){
         vector<int> level;
         int size = q.size();
